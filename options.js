@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Saves options to chrome.storage
 function save_options() {
   var time = document.getElementById('time').value;
@@ -96,4 +95,3 @@ document.getElementById('save').addEventListener('click',
     save_options);
 	
 document.getElementById('addbutton').addEventListener('click', 'add_site_input')
->>>>>>> master
