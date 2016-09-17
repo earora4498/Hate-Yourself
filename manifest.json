@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "manifest_version": 2,
 
@@ -17,3 +18,22 @@
 	"storage"
   ]
 }
+=======
+{
+  "manifest_version": 2,
+
+  "name": "Hate Yourself",
+  "description": "This extension makes you hate yourself for doing unproductive things.",
+  "version": "1.0",
+  "options_page": "options.html",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+	"default_title": "Click here"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
+>>>>>>> master
