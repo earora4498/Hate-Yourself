@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Saves options to chrome.storage
 function save_options() {
   var time = document.getElementById('time').value;
@@ -14,7 +13,7 @@ function save_options() {
   var site9x = document.getElementById('site9').value;
   
   chrome.storage.sync.set({
-    timerTime: time
+    timerTime: time,
 	site0: site0x,
 	site1: site1x,
 	site2: site2x,
@@ -40,9 +39,30 @@ function save_options() {
 // stored in chrome.storage.
 function restore_options() {
   chrome.storage.sync.get({
+	timerTime: 0,
+	site0: "",
+	site1: "",
+	site2: "",
+	site3: "",
+	site4: "",
+	site5: "",
+	site6: "",
+	site7: "",
+	site8: "",
+	site9: ""
   }, function(items) {
-    document.getElementById('time').value = items.timerTime;
-	
+		document.getElementById('time').value = items.timerTime;
+
+		document.getElementById('site0').value = items.site0;
+		document.getElementById('site1').value = items.site1;
+		document.getElementById('site2').value = items.site2;
+		document.getElementById('site3').value = items.site3;
+		document.getElementById('site4').value = items.site4;
+		document.getElementById('site5').value = items.site5;
+		document.getElementById('site6').value = items.site6;
+		document.getElementById('site7').value = items.site7;
+		document.getElementById('site8').value = items.site8;
+		document.getElementById('site9').value = items.site9;	
   });
 }
 
@@ -52,48 +72,3 @@ document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click',
     save_options);
 	
-=======
-// Saves options to chrome.storage
-function save_options() {
-  var time = document.getElementById('time').value;
-  chrome.storage.sync.set({
-    timerTime: time
-  }, function() {
-    // Update status to let user know options were saved.
-    var status = document.getElementById('status');
-    status.textContent = 'Options saved.';
-    setTimeout(function() {
-      status.textContent = '';
-    }, 750);
-  });
-}
-
-// Restores select box and checkbox state using the preferences
-// stored in chrome.storage.
-function restore_options() {
-  chrome.storage.sync.get({
-    timerTime: 0
-	sites: []
-  }, function(items) {
-    document.getElementById('time').value = items.timerTime;
-	for(i = 0, i < items.sites.length, i++)
-		var input = document.createElement('input')
-		input.type('text')
-		input.name=('site-' + items.sites.length)	
-  });
-}
-
-function add_site_input() {
-		
-		var input = document.createElement('input');
-		input.type = 'text';
-		input.name = 'site_input';
-}
-
-var sites = [];
-document.addEventListener('DOMContentLoaded', restore_options);
-document.getElementById('save').addEventListener('click',
-    save_options);
-	
-document.getElementById('addbutton').addEventListener('click', 'add_site_input')
->>>>>>> master
