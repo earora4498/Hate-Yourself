@@ -1,0 +1,102 @@
+html, body {
+    background-image: linear-gradient(-90deg, #FAD84C, #EB1700);
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+    color: #2b2b2b;
+}
+
+
+.infosection{
+    background: #2b2b2b;
+    border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    border: 0px solid #2b2b2b;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.6);
+    width: 550px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top:20px;
+}
+
+
+/*BUTTON STYLING*/
+.btn {
+    width=30px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  background: #4abdac;
+  background-image: -webkit-linear-gradient(top, #4abdac, #369688);
+  background-image: -moz-linear-gradient(top, #4abdac, #369688);
+  background-image: -ms-linear-gradient(top, #4abdac, #369688);
+  background-image: -o-linear-gradient(top, #4abdac, #369688);
+  background-image: linear-gradient(to bottom, #4abdac, #369688);
+  -webkit-border-radius: 23;
+  -moz-border-radius: 23;
+  border-radius: 23px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#save {
+    width=30px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.btn:hover {
+  background: #f7b733;
+  background-image: -webkit-linear-gradient(top, #f7b733, #f5a70a);
+  background-image: -moz-linear-gradient(top, #f7b733, #f5a70a);
+  background-image: -ms-linear-gradient(top, #f7b733, #f5a70a);
+  background-image: -o-linear-gradient(top, #f7b733, #f5a70a);
+  background-image: linear-gradient(to bottom, #f7b733, #f5a70a);
+  text-decoration: none;
+}
+
+.blocktime {
+    color: white;
+    font-size: 26px;
+    padding: 10px;
+}
+
+#butt {
+    text-align: center;
+}
+
+.site_container #dick {
+    color: white;
+    font-size: 26px;
+    padding: 0px;
+}
+
+
+
+
+.header{
+    align-content: center;
+    margin: 0px auto;
+}
+
+#title{
+    display: inline-block;
+    align-content: center;
+    font: 400 100px/1.3 'Oleo Script', Helvetica, sans-serif;
+    color: #2b2b2b;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    margin: 0px auto;
+}
+
