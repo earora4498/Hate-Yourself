@@ -51,6 +51,8 @@ function restore_options() {
 	site8: "",
 	site9: ""
   }, function(items) {
+	  
+	  
 		document.getElementById('time').value = items.timerTime;
 
 		document.getElementById('site0').value = items.site0;
@@ -63,6 +65,8 @@ function restore_options() {
 		document.getElementById('site7').value = items.site7;
 		document.getElementById('site8').value = items.site8;
 		document.getElementById('site9').value = items.site9;	
+		
+		}
   });
 }
 
