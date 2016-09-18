@@ -1,17 +1,33 @@
 {
   "manifest_version": 2,
 
-  "name": "Hate Yourself",
-  "description": "This extension makes you hate yourself for doing unproductive things.",
+  "name": "HackMIT Chrome Extension",
+  "description": "Redirects to bad.html and shocks user when they go to blocked sites",
   "version": "1.0",
   "options_page": "options.html",
 
   "browser_action": {
     "default_icon": "icon.png",
+    "default_popup": "popup.html",
 	"default_title": "Click here"
+  },
+    "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
   },
   "permissions": [
     "activeTab",
-    "https://ajax.googleapis.com/"
+    "https://ajax.googleapis.com/",
+	"storage",
+	"tabs"
+  ],
+  
+   "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["eventPage.js"],
+	  "run_at": "document_start"
+    }
   ]
+
 }

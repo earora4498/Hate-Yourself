@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head><title>Hate Yourself Extension Options</title></head>
+<head>
+    <link rel="stylesheet" type="text/css" href="options.css">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <title>Hate Yourself Extension Options</title>
+</head>
 <body>
 
+<div class="header" align="center">
+         <h1 id="title">hate urself 2day</h1>
+</div>
+    
+    
 
-Enter time:<input type="text" name="time">
-
-
-<div id="site_container">
-	<input type='text' name='site 0'><br>
-	<input type='text' name='site 1'><br>
-	<input type='text' name='site 2'><br>
-	<input type='text' name='site 3'><br>
-	<input type='text' name='site 4'><br>
-	<input type='text' name='site 5'><br>
-	<input type='text' name='site 6'><br>
-	<input type='text' name='site 7'><br>
-	<input type='text' name='site 8'><br>
-	<input type='text' name='site 9'>
+<div class="infosection">
+    <div class="blocktime" align="center">
+        <p id="butt">How long would you like to block for? </p> 
+        <input type = "text" id="time" size="15">
+    </div>
+    <div class = "site_container" align="center">
+        <p id="dick">Blocked Sites:</p>
+	   <input type='text' id='site0'><br>
+	   <input type='text' id='site1'><br>
+	   <input type='text' id='site2'><br>
+	   <input type='text' id='site3'><br>
+	   <input type='text' id='site4'><br>
+	   <input type='text' id='site5'><br>
+	   <input type='text' id='site6'><br>
+	   <input type='text' id='site7'><br>
+	   <input type='text' id='site8'><br>
+	   <input type='text' id='site9'><br><br>
+    </div>
+    <div id="status" align = "center">
+        <button class = "btn" id="save">Save</button>
+    </div>
+    <script src="options.js"></script>
 </div>
 
-<div id="status"></div>
-<button id="save">Save</button>
 
-<script src="options.js"></script>
+
 </body>
 </html>
