@@ -66,7 +66,7 @@ function restore_options() {
 		document.getElementById('site8').value = items.site8;
 		document.getElementById('site9').value = items.site9;	
 		
-		}
+		
   });
 }
 
